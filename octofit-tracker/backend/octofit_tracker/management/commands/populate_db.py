@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
 from pymongo import MongoClient
 
+# Populate the octofit_db database with test data
 
 class Command(BaseCommand):
     help = "Populate octofit_db with test data (users, teams, activities, leaderboard, workouts)."
