@@ -1,0 +1,122 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 60px;
+  width: auto;
+  pointer-events: none;
+  margin-right: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+h2, h1, h3, h4, h5, h6 {
+  color: #2a5298;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+}
+
+li {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+table {
+  width: 100%;
+  background: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  margin-bottom: 2rem;
+}
+
+th {
+  background: #2a5298;
+  color: #fff;
+  padding: 0.75rem;
+}
+
+td {
+  background: #eaf0fb;
+  color: #222;
+  padding: 0.75rem;
+}
+
+button, .btn, .navbar .btn {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  margin: 0.2rem;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover, .navbar .btn:hover {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+}
+
+a, .App-link, .navbar-nav .nav-link {
+  color: #2a5298;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover, .navbar-nav .nav-link:hover {
+  color: #1e3c72;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%) !important;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
