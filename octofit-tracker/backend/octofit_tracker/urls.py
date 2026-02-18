@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect
 import os
 
 urlpatterns = [
+    path('', lambda request: redirect('/api/health/')),
     path('admin/', admin.site.urls),
     path('api/', include('tracker.urls')),
 ]
